@@ -1,0 +1,4 @@
+from django import template
+t = template.Template('my name is {{ name }}.')
+c = template.Context({'name':'delta'})
+print t.render(c)
